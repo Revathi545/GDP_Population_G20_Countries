@@ -1,5 +1,5 @@
 var fs = require('fs')
-fs.readFile('./datafile.csv', 'utf8', function (err,data) {
+fs.readFile('data/datafile.csv', 'utf8', function (err,data) {
   if (err) {
     return console.log(err);
   }
@@ -24,6 +24,6 @@ fs.readFile('./datafile.csv', 'utf8', function (err,data) {
     jsonData.push(obj);
   }
   
-  fs.writeFileSync("datafile.json", JSON.stringify(jsonData), encoding = "utf8");
+  fs.writeFileSync("output/datafile.json", JSON.stringify(jsonData), encoding = "utf8");
  
 });

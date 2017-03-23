@@ -1,5 +1,5 @@
 var fs = require('fs')
-fs.readFile('./datafile.json', 'utf8', function (err,data) {
+fs.readFile('./output/datafile.json', 'utf8', function (err,data) {
   
 //Parsing the JSON file so as to use here
   data = JSON.parse(data);
